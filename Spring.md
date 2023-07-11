@@ -4,7 +4,7 @@ Interface BeanFactory
 
 ---
 
-# ApplicationContext를 구현하고 있는 대표적인 클래스
+## ApplicationContext를 구현하고 있는 대표적인 클래스
 
 - CLASSPATH에서 XML설정파일을 읽어들여 동작한다.
   org.springframework.context.support
