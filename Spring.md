@@ -25,3 +25,20 @@ Interface BeanFactory
 - 외부 개발을 위한 MVC관련 라이브러리
 - 데이터베이스 정보를 읽어오기 위한 것들
 
+# MyService & MyDao 클래스다이어그램
+- 프로그래머가 직접 인스턴스를 생성하고 주입하는 방법
+- 연관관계
+    - MyService가 MyDao를 가진다.
+
+![img_1.png](img_1.png)
+
+- setter 주입
+
+ MyService myService = new MyService();
+ MyDao myDao = new MyDao();
+ MyService.setMyDao(MyDao);
+
+- 생성자에 주입
+
+MyService myService = new MyService(new MyDao());
+
