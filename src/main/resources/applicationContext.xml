@@ -13,3 +13,4 @@
     </bean>
     <bean id="myDao" class="com.example.spring02.component.MyDao"></bean>
 </beans>
+<!-- 즉 총 4개의 인스턴스가 만들어지는 것이다. -->
