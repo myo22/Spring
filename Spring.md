@@ -42,3 +42,18 @@ Interface BeanFactory
 
 MyService myService = new MyService(new MyDao());
 
+---
+
+# Spring 설정으로 주입
+
+    MyService myService = new MyService();
+    MyDao myDao = new MyDao();
+    MyService.setMyDao(MyDao);
+
+    <bean id="myService" class="com.example.spring02.component.MyService">
+    <!-- setMyDao를 호출하는 프로퍼티 -->
+        <property name="myDao" ref="myDao"></property>
+    </bean>
+    <bean id="myDao" class="com.example.spring02.component.MyDao"></bean>
+
+xml파일로 선언적으로 의존성을 주입한다. -> ApplicationContext가 Bean을 관리한다.
