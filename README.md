@@ -97,3 +97,20 @@
     <bean id="myDao" class="com.example.spring02.component.MyDao"></bean>
 
 xml파일로 선언적으로 의존성을 주입한다. -> ApplicationContext가 Bean을 관리한다.
+
+---
+
+스프링 초반에 xml파일을 많이 사용함 -> 어려워함, 에러 체크 안됨 -> 짜증
+
+다른 방법은 없나? ->  AnnotationConfigApplicationContext
+
+# Annotation을 이용한 설정
+
+- Spring 3.0부터 등장
+- Annotation 기반 (Java Config, Component Scan)
+
+      org.springframework.context.annotation
+      Class AnnotationConfigApplicationContext
+
+---
+
