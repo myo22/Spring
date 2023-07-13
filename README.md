@@ -114,3 +114,4 @@ xml파일로 선언적으로 의존성을 주입한다. -> ApplicationContext가
 
 ---
 
+@Configuration이 붙어있으면 설정 파일로 인식해서 인스턴스로 만들어서 관리한다.

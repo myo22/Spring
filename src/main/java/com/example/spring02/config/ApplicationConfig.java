@@ -2,6 +2,7 @@ package com.example.spring02.config;
 
 import com.example.spring02.component.MyDao;
 import com.example.spring02.component.MyService;
+import com.example.spring02.component.MyUtil;
 import exam.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -41,7 +42,7 @@ public class ApplicationConfig {
 //    <!-- setMyDao를 호출하는 프로퍼티 -->
 //        <property name="myDao" ref="myDao"></property>
 //    </bean>
-    @Bean
+    @Bean(name = "myService2") // bean id가 myService2
     public MyService myService(MyDao myDao){ // 이 안에다가 MyDao를 주입하면 컨테이너가 MyDao를 만들고 이것을 만들어준다.
         MyService myService = new MyService();
         myService.setMyDao(myDao);
@@ -52,4 +53,9 @@ public class ApplicationConfig {
     public MyDao myDao(){
         return new MyDao();
     }
+
+//    @Bean(name = "myUtil2")
+//    public MyUtil myUtil(){
+//        return new MyUtil();
+//    }
 }
