@@ -1,5 +1,7 @@
 package com.example.spring02;
 
+import com.example.spring02.component.MyDao;
+import com.example.spring02.component.MyService;
 import exam.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,6 +22,13 @@ public class SpringApplicationContextExam3 {
         System.out.println(book11.getTitle());
         System.out.println(book11.getPrice());
 
+        Book book2 = context.getBean("book2", Book.class);
+        System.out.println(book2.getTitle());
 
+        MyDao myDao = context.getBean("myDao", MyDao.class);
+        myDao.get();
+
+        MyService myService = context.getBean("myService", MyService.class);
+        myService.Service();
     }
 }

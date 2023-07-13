@@ -5,7 +5,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--  동일한 아이디로 인스턴스를 만들 수 있다. -->
     <bean id="book1" class="exam.Book"></bean>
-    <bean id="book2" class="exam.Book"></bean>
+    <bean id="book2" class="exam.Book">
+        <property name="title" value="즐거운 자바"></property>
+        <property name="price" value="9000"></property>
+    </bean>
+
 
     <bean id="myService" class="com.example.spring02.component.MyService">
     <!-- setMyDao를 호출하는 프로퍼티 -->
