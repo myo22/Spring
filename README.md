@@ -246,6 +246,22 @@ http://localhost:8080/
 
  ## IntelliJ에서 웹 어플리케이션 만들기
 
+ - 프로젝트 이름 : servletexam
+ - 실행 : 
+    http://localhost:8080/servletexam_war_exploded/
+
+ - 만든 웹 어플리케이션이 ROOT 웹 어플리케이션이 아니다.
+ - src/main/webapp/index.jsp가 보여진 것.
+
+
+---
+
+## http://localhost:8080/ 로 실행하려면?
+
+- deployment 부분에가서 수정하면 됩니다.
+
+---
+
 
 
 
