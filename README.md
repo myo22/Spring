@@ -226,13 +226,28 @@ META-INF, WEB-INF, index.html, jsp, servlets등이 있다.
 ## Tomcat을 이용한 웹 어플리케이션을 만든다는 의미는?
 
 http://localhost:8080/
-- 내가 만든 사이트가 보여지려면?
-- webapps/ROOT의 내용을 내가 만든 내용으로 바꾸면 된다.
-- Tomcat 서버에 내가 만든 웹 어플리케이션을 deploy한다.
+
+    - 내가 만든 사이트가 보여지려면?
+    - webapps/ROOT의 내용을 내가 만든 내용으로 바꾸면 된다.
+    - Tomcat 서버에 내가 만든 웹 어플리케이션을 deploy한다.
 
 ---
 
 ## 서버와 브라우저의 동작
+
+![img_2.png](img_2.png)
+
+---
+
+ ## 웹 어플리케이션을 어떻게 만들까?
+  - Eclipse IDE, IntelliJ IDE는 손쉽게 가능하게 해준다.
+
+---
+
+ ## IntelliJ에서 웹 어플리케이션 만들기
+
+
+
 
 
 
